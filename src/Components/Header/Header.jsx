@@ -1,4 +1,8 @@
+// Package Imports
+import { Link } from 'react-router-dom';
+// Style Imports
 import './Header.css';
+
 
 const Header = () => {
   return (
@@ -13,16 +17,16 @@ const Header = () => {
         <div className="menu">
           <ul>
             <li>
-              <a href="">Home</a>
+              <Link to="home">Home</Link>
             </li>
             <li>
-              <a href="">Blog Posts</a>
+              <Link to="blog-posts">Blog Posts</Link>
             </li>
             <li>
-              <a href="">About</a>
+              <Link to="about">About</Link>
             </li>
             <li>
-              <a href="">Contact</a>
+              <Link to="contact">Contact</Link>
             </li>
           </ul>
         </div>
