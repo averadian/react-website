@@ -9,10 +9,10 @@ const Header = () => {
     <div className="header-container">
       <div className="header-inner">
         <div className="logo">
-          <a href="">
+          <Link to="home">
             {/* <img src="https://placekitten.com/g/50/50" alt="" /> */}
             <h1>Averadian</h1>
-          </a>
+          </Link>
         </div>
         <div className="menu">
           <ul>
