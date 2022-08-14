@@ -10,7 +10,6 @@ const Header = () => {
       <div className="header-inner">
         <div className="logo">
           <Link to="home">
-            {/* <img src="https://placekitten.com/g/50/50" alt="" /> */}
             <h1>Averadian</h1>
           </Link>
         </div>
