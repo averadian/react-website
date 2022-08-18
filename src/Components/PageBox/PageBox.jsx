@@ -13,9 +13,6 @@ const PageBox = (props) => {
   const [loading, setLoading] = useState(true);
 
   const pageName = location.pathname.substring(1);
-  const handlePageAnimation = () => {
-    OverlayUp();
-  }
 
   const handleOnClick = () => {
     OverlayDown();
@@ -26,12 +23,12 @@ const PageBox = (props) => {
   }
 
   useEffect(() => {
-    handlePageAnimation();
+    OverlayUp();
     
     setTimeout(() => {
       setLoading(false);
     }, 400);
-  }, []);
+  });
 
   return (
     !loading ? (
