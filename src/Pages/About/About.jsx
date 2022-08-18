@@ -1,6 +1,16 @@
-const About = () => {
+// Page Imports
+import PageBox from '../../Components/PageBox/PageBox';
+
+const About = (props) => {
+  const { Title, Description, OverlayUp, OverlayDown } = props;
+
   return (
-    <h1>About</h1>
+    <PageBox 
+      Title={Title} 
+      Description={Description} 
+      OverlayUp={OverlayUp} 
+      OverlayDown={OverlayDown} 
+    />
   );
 }
 

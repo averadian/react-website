@@ -1,0 +1,221 @@
+.pagebox-wrapper {
+  position: fixed; 
+  width: 100%; 
+  height: 100%; 
+  top: 0px;
+  left: 0px; 
+  z-index: 9999; 
+  opacity: 1;
+  animation-duration: 0s; 
+  animation-delay: 0.5s; 
+  animation-fill-mode: none;
+  background-color: #101010;
+}
+
+.simplebar-wrapper {
+  margin: 0;
+}
+
+.simplebar-offset {
+  right: -20px; 
+  bottom: 0px;
+}
+
+.simplebar-content-wrapper {
+  height: 100%; 
+  padding-right: 20px; 
+  padding-bottom: 0px;
+  overflow: hidden scroll;
+}
+
+.simplebar-content {
+  padding: 0px;
+}
+
+.pagebox-wrapper .pagebox-close {
+  position: fixed;
+  right: 4vw;
+  top: 35px;
+  z-index: 99;
+}
+
+.pagebox-wrapper .pagebox-close .close-btn {
+  -ms-flex-direction: column;
+  -ms-flex-pack: justify;
+  -ms-flex-pack: center;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  height: 19px;
+  justify-content: space-between;
+  justify-content: center;
+  position: relative;
+  width: 30px;
+}
+
+.pagebox-wrapper .pagebox-close .close-btn::after, 
+.pagebox-wrapper .pagebox-close .close-btn::before {
+  background-color: #fff;
+  height: 2px;
+}
+
+.pagebox-wrapper .pagebox-close .close-btn::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.pagebox-wrapper .pagebox-close .close-btn::after, 
+.pagebox-wrapper .pagebox-close .close-btn::before {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+}
+
+.pagebox-wrapper .pagebox-close .close-btn::before {
+  content: '';
+  width: 85%;
+}
+
+.pagebox-wrapper .pagebox-close .close-btn::after, 
+.pagebox-wrapper .pagebox-close .close-btn::before {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  background-color: gray;
+  height: 3px;
+  width: 100%;
+}
+
+.pagebox-wrapper .pagebox-close .close-btn::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.pagebox-wrapper .pagebox-close .close-btn::after {
+  content: '';
+}
+
+.pagebox-wrapper .pagebox-content {
+  margin: 70px 0;
+}
+
+.pagebox-wrapper .pagebox-content .section-heading.page-heading {
+  margin-bottom: 83px;
+  text-align: center;
+}
+
+.pagebox-wrapper .pagebox-content .section-heading > .section-description {
+  font-size: 15px;
+  margin-bottom: 17px;
+  color: #9f9f9f;
+}
+
+.container p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.pagebox-wrapper .pagebox-content .section-heading.page-heading > .section-title {
+  font-size: 46px;
+  margin-bottom: 37px;
+}
+
+.pagebox-wrapper .pagebox-content .section-heading > .section-title {
+  display: inline-block;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -.25px;
+  line-height: 100%;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 9;
+}
+
+.container h2 {
+  color: #f0f0f0;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.pagebox-wrapper .pagebox-content .section-heading.page-heading > .animated-bar {
+  background-color: blueviolet;
+}
+
+.pagebox-wrapper .pagebox-content .section-heading.page-heading > .animated-bar {
+  content: '';
+  display: block;
+  height: 4px;
+  left: 0;
+  margin: 0 auto 0 auto;
+  position: relative;
+  right: 0;
+  width: 75px;
+}
+
+.pagebox-wrapper .pagebox-content .section-heading.page-heading > .animated-bar::before {
+  left: 8px;
+}
+
+.pagebox-wrapper .pagebox-content .section-heading.page-heading > .animated-bar::after, 
+.pagebox-wrapper .pagebox-content .section-heading.page-heading > .animated-bar::before {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: barAnimation;
+  -webkit-animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: barAnimation;
+  animation-timing-function: linear;
+  background-color: #101010;
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+.pagebox-wrapper .pagebox-content .section-heading.page-heading > .animated-bar::after {
+  left: 0;
+}
+
+@keyframes barAnimation {
+	0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(75px);
+    transform: translateX(75px);
+  }
+}
+
+.pagebox-wrapper .pagebox-content .single-section:not(:last-child) {
+  margin-bottom: 120px;
+}
+
+.simplebar-placeholder {
+  width: auto; 
+  height: 3161px;
+}
+
+.simplebar-track.simplebar-horizontal {
+  visibility: hidden;
+}
+
+.simplebar-scrollbar {
+  width: 25px;
+  transform: translate3d(0px, 0px, 0px);
+  display: none;
+}
+
+.simplebar-track.simplebar-vertical {
+  visibility: "visible";
+  width: 13px;
+}
+
+.simplebar-scrollbar {
+  transform: translate3d(0px, 0px, 0px);
+  display: block;
+  height: 371px;
+}

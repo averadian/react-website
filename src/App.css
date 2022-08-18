@@ -1,0 +1,57 @@
+#page-transition-effect.animate-up {
+  -webkit-animation-name: overlayEffectUp;
+  animation-name: overlayEffectUp;
+}
+
+#page-transition-effect.animate-down {
+  -webkit-animation-name: overlayEffectDown;
+  animation-name: overlayEffectDown;
+}
+
+#page-transition-effect {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-transform: translateY(100%);
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  background-color: #181818;
+  bottom: 0;
+  display: block;
+  position: fixed;
+  top: 0;
+  transform: translateY(100%);
+  width: 100%;
+  z-index: 99999;
+}
+
+@keyframes overlayEffectUp {
+	0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  35%, 65% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes overlayEffectDown {
+	0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  35%, 65% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
