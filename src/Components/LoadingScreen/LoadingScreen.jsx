@@ -5,17 +5,21 @@ import './LoadingScreen.css';
 
 const LoadingScreen = () => {
   useEffect(() => {
+    const icons = document.getElementById("loader-icon-container");
+    const container = document.getElementById("loader-container");
 
     setTimeout(() => {
-      const item = document.getElementById("loader-icon-container");
-      item.classList.add("fade-out");
+      icons.classList.add("fade-out");
     }, 1200);
 
-    setTimeout(() => {
-      const item = document.getElementById("loader-container");
-      item.classList.add("fade-out");
+    setTimeout(() => {;
+      container.classList.add("fade-out");
     }, 2100);
 
+    setTimeout(() => {
+      icons.style.display = "none";
+      container.style.display = "none";
+    }, 2900)
   }, []);
 
   return (
