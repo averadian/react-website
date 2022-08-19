@@ -58,7 +58,7 @@ const PageBox = (props) => {
                                 </div>
                               </div>
                             </div>
-                            {/* stuff goes here */}
+                            {props.children}
                           </div>
                         </div>
                       </div>

@@ -1,5 +1,7 @@
 // Page Imports
 import PageBox from '../../Components/PageBox/PageBox';
+// Style Imports
+import './BlogPosts.css';
 
 const BlogPosts = (props) => {
   const { Title, Description, OverlayUp, OverlayDown } = props;
@@ -10,7 +12,9 @@ const BlogPosts = (props) => {
       Description={Description} 
       OverlayUp={OverlayUp} 
       OverlayDown={OverlayDown} 
-    />
+    >
+      <h2 id='blogposts-placeholder'>Coming Soon</h2>
+    </PageBox>
   );
 }
 

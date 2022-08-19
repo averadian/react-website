@@ -1,5 +1,7 @@
 // Page Imports
 import PageBox from '../../Components/PageBox/PageBox';
+// Style Imports
+import './About.css';
 
 const About = (props) => {
   const { Title, Description, OverlayUp, OverlayDown } = props;
@@ -10,7 +12,9 @@ const About = (props) => {
       Description={Description} 
       OverlayUp={OverlayUp} 
       OverlayDown={OverlayDown} 
-    />
+    >
+      <h2 id='about-placeholder'>Coming Soon</h2>
+    </PageBox>
   );
 }
 
