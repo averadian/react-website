@@ -1,6 +1,5 @@
 // Package Imports
 import { Link } from 'react-router-dom';
-import { motion } from "framer-motion";
 // Style Imports
 import './Header.css';
 
