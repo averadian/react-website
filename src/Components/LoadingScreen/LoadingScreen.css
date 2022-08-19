@@ -1,0 +1,84 @@
+.preloader {
+  background-color: #0e0e0e;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  /* display: none; */
+}
+
+.preloader .preloader-block {
+  -webkit-transform: translate(50%,50%);
+  bottom: 50%;
+  position: fixed;
+  right: 50%;
+  transform: translate(50%,50%);
+  z-index: 3000;
+}
+
+.preloader-icon {
+  /* display: none; */
+}
+
+.preloader .preloader-block .preloader-icon .loading-dot.loading-dot-1 {
+  -webkit-animation: 1.2s grow ease-in-out infinite;
+  animation: 1.2s grow ease-in-out infinite;
+}
+
+.preloader .preloader-block .preloader-icon .loading-dot.loading-dot-2 {
+  -webkit-animation: 1.2s grow ease-in-out infinite .15555s;
+  animation: 1.2s grow ease-in-out infinite .15555s;
+  margin: 0 14px;
+}
+
+.preloader .preloader-block .preloader-icon .loading-dot.loading-dot-3 {
+  -webkit-animation: 1.2s grow ease-in-out infinite .3s;
+  animation: 1.2s grow ease-in-out infinite .3s;
+}
+
+.preloader .preloader-block .preloader-icon .loading-dot {
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+}
+
+@keyframes grow {
+  0%, 100%, 40% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+#loader-container.fade-out,
+#loader-icon-container.fade-out {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+#loader-container,
+#loader-icon-container {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  width: 100%;
+  z-index: 99999;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

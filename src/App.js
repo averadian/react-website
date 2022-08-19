@@ -3,14 +3,14 @@ import Main from './Pages/Main';
 import BlogPosts from './Pages/BlogPosts/BlogPosts';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
+// Component Imports
+import LoadingScreen from './Components/LoadingScreen/LoadingScreen';
 // Package Imports
 import { Route, Routes } from 'react-router-dom';
-import { motion } from "framer-motion";
 // Style Imports
 import './App.css';
 
 function App() {
-
   const overlayUp = () => {
     const overlayElement = document.getElementById("page-transition-effect");
     overlayElement.className = "animate-up";
@@ -22,7 +22,8 @@ function App() {
   }
 
   return (
-    <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
+    <>
+      <LoadingScreen /> 
       <div id="page-transition-effect"></div>
       <Routes>
         <Route path="/" element={<Main />}>
@@ -31,7 +32,7 @@ function App() {
           <Route path="contact" element={<Contact Title={"Get in Touch"} Description={"Feel free to contact me anytime"} OverlayUp={overlayUp} OverlayDown={overlayDown} />} />
         </Route>
       </Routes>
-    </motion.div>
+    </>
   );
 }
 
