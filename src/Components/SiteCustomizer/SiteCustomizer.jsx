@@ -56,43 +56,43 @@ const SiteCustomizer = (props) => {
         <ul className="cursor">
           <li>
             <div>
-              <GiIcons.GiArrowCursor className="icon" />
+              <GiIcons.GiArrowCursor className="cursor-icon" />
               <div className="default clicker active" onClick={onCursorClick}></div>
             </div>
           </li>
           <li>
             <div>
-              <FaIcons.FaHandPointer className="icon" />
+              <FaIcons.FaHandPointer className="cursor-icon" />
               <div className="pointer clicker" onClick={onCursorClick}></div>
             </div>
           </li>
           <li>
             <div>
-              <FaIcons.FaHandPaper className="icon" />
+              <FaIcons.FaHandPaper className="cursor-icon" />
               <div className="grab clicker" onClick={onCursorClick}></div>
             </div>
           </li>
           <li>
             <div>
-              <FaIcons.FaHandRock className="icon" />
+              <FaIcons.FaHandRock className="cursor-icon" />
               <div className="grabbing clicker" onClick={onCursorClick}></div>
             </div>
           </li>
           <li>
             <div>
-              <BiIcons.BiPlusMedical className="icon" />
+              <BiIcons.BiPlusMedical className="cursor-icon" />
               <div className="cell clicker" onClick={onCursorClick}></div>
             </div>
           </li>
           <li>
             <div>
-              <BiIcons.BiCrosshair className="icon" />
+              <BiIcons.BiCrosshair className="cursor-icon" />
               <div className="crosshair clicker" onClick={onCursorClick}></div>
             </div>
           </li>
           <li>
             <div>
-              <TbIcons.TbForbid className="icon" />
+              <TbIcons.TbForbid className="cursor-icon" />
               <div className="no-drop clicker" onClick={onCursorClick}></div>
             </div>
           </li>

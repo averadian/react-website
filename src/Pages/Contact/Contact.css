@@ -11,6 +11,7 @@
 .contact-info p,
 .contact-info span {
   color: #9f9f9f;
+  line-height: 1.95;
 }
 
 .contact-section .contact-form .form-group {

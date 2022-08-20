@@ -107,14 +107,14 @@
   font-weight: 600;
 }
 
-.wrapper .cursor li .icon {
+.wrapper .cursor li .cursor-icon {
   width: 30px;
   height: 30px;
   color: #fff;
   margin-bottom: 10px;
 }
 
-.wrapper .cursor li .icon:hover {
+.wrapper .cursor li .cursor-icon:hover {
   opacity: 1;
 }
 
