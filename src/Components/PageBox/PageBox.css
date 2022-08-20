@@ -139,7 +139,7 @@
 }
 
 .pagebox-wrapper .pagebox-content .section-heading.page-heading > .animated-bar {
-  background-color: blueviolet;
+  background-color: var(--accentColor);
 }
 
 .pagebox-wrapper .pagebox-content .section-heading.page-heading > .animated-bar {

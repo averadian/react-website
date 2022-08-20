@@ -18,7 +18,7 @@
 }
 
 .contact-section .contact-form .form-group .form-control:focus {
-  border-bottom: 1px solid blueviolet;
+  border-bottom: 1px solid var(--accentColor);
   box-shadow: none;
 }
 
@@ -50,8 +50,8 @@
 }
 
 .btn.button-scheme {
-  background-color: blueviolet !important;
-  border: 1px solid blueviolet !important;
+  background-color: var(--accentColor) !important;
+  border: 1px solid var(--accentColor) !important;
 }
 
 .button-main.button-scheme {
@@ -87,7 +87,7 @@
 }
 
 .contact-section .contact-info .list-info .info-icon .contact-icon {
-  color: blueviolet;
+  color: var(--accentColor);
 }
 
 .contact-section .contact-info .list-info .info-icon .contact-icon {

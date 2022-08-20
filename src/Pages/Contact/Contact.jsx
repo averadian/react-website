@@ -10,7 +10,7 @@ import * as MdIcons from "react-icons/md";
 import './Contact.css';
 
 const Contact = (props) => {
-  const { Title, Description, OverlayUp, OverlayDown } = props;
+  const { Title, Description, OverlayUp, OverlayDown, AccentColor } = props;
   const emailFormTemplate = {
     name: '',
     emailAddress: '',
@@ -59,7 +59,8 @@ const Contact = (props) => {
       Title={Title} 
       Description={Description} 
       OverlayUp={OverlayUp} 
-      OverlayDown={OverlayDown} 
+      OverlayDown={OverlayDown}
+      AccentColor={AccentColor}  
     >
       {/* Contact Section */}
       <div className="contact-section single-section">
@@ -69,12 +70,12 @@ const Contact = (props) => {
             <form className="contact-form" id="contact-form" onSubmit={handleOnSubmit}>
               <h4 className="content-title">Message Me</h4>
               <div className="row">
-                <div className="col-12 col-md-6 form-group"><input className="form-control" id="contact-name" type="text" name="name" onChange={onChange} placeholder="Name" required /></div>
-                <div className="col-12 col-md-6 form-group"><input className="form-control" id="contact-email" type="email" name="emailAddress" onChange={onChange} placeholder="Email" required /></div>
-                <div className="col-12 form-group"><input className="form-control" id="contact-subject" type="text" name="subject" onChange={onChange} placeholder="Subject" required /></div>
-                <div className="col-12 form-group form-message"><textarea className="form-control" id="contact-message" name="message" onChange={onChange} placeholder="Message" rows="5" required></textarea></div>
+                <div className="col-12 col-md-6 form-group"><input className="form-control" id="contact-name" type="text" name="name" onChange={onChange} placeholder="Name" style={{"--accentColor": `${props.AccentColor}`}} required /></div>
+                <div className="col-12 col-md-6 form-group"><input className="form-control" id="contact-email" type="email" name="emailAddress" onChange={onChange} placeholder="Email" style={{"--accentColor": `${props.AccentColor}`}} required /></div>
+                <div className="col-12 form-group"><input className="form-control" id="contact-subject" type="text" name="subject" onChange={onChange} placeholder="Subject" style={{"--accentColor": `${props.AccentColor}`}} required /></div>
+                <div className="col-12 form-group form-message"><textarea className="form-control" id="contact-message" name="message" onChange={onChange} placeholder="Message" rows="5" style={{"--accentColor": `${props.AccentColor}`}} required></textarea></div>
                 <div className="col-12 form-submit">
-                  <button className="btn button-main button-scheme" id="contact-submit" type="submit">
+                  <button className="btn button-main button-scheme" id="contact-submit" type="submit" style={{"--accentColor": `${props.AccentColor}`}}>
                     {
                       sending ? 
                       <div className="spinner-border" role="status">
@@ -94,21 +95,21 @@ const Contact = (props) => {
               <p className="info-description">Always available for freelance work if the right project comes along!</p>
               <ul className="list-unstyled list-info">
                 <li>
-                  <div className="media align-items-center"><span className="info-icon"><IoIcons.IoLogoIonic className="contact-icon" /></span>
+                  <div className="media align-items-center"><span className="info-icon"><IoIcons.IoLogoIonic className="contact-icon" style={{"--accentColor": `${props.AccentColor}`}} /></span>
                     <div className="media-body info-details">
                       <h6 className="info-type">Name</h6><span className="info-value">Nicholas Hacault</span>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <div className="media align-items-center"><span className="info-icon"><MdIcons.MdPhone className="contact-icon"/></span>
+                  <div className="media align-items-center"><span className="info-icon"><MdIcons.MdPhone className="contact-icon" style={{"--accentColor": `${props.AccentColor}`}} /></span>
                     <div className="media-body info-details">
                       <h6 className="info-type">Call Me</h6><span className="info-value"><a href="tel:+14313015128">+1 (431) 301-5128</a></span>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <div className="media align-items-center"><span className="info-icon"><IoIcons.IoMdSend className="contact-icon" /></span>
+                  <div className="media align-items-center"><span className="info-icon"><IoIcons.IoMdSend className="contact-icon" style={{"--accentColor": `${props.AccentColor}`}} /></span>
                     <div className="media-body info-details">
                       <h6 className="info-type">Email Me</h6><span className="info-value"><a href="mailto:nhacault7@gmail.com">nhacault7@gmail.com</a></span>
                     </div>

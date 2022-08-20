@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import './PageBox.css';
 
 const PageBox = (props) => {
-  const { Title, Description, OverlayUp, OverlayDown } = props;
+  const { Title, Description, OverlayUp, OverlayDown, AccentColor } = props;
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -54,7 +54,7 @@ const PageBox = (props) => {
                                 <div className="section-heading page-heading">
                                   <p className="section-description">{Description}</p>
                                   <h2 className="section-title">{Title}</h2>
-                                  <div className="animated-bar"></div>
+                                  <div className="animated-bar" style={{"--accentColor": `${AccentColor}`}}></div>
                                 </div>
                               </div>
                             </div>

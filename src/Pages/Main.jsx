@@ -5,14 +5,14 @@ import Header from './../Components/Header/Header';
 // Package Imports
 import { useLocation, Outlet } from "react-router-dom";
 
-const Main = () => {
+const Main = (props) => {
   const location = useLocation();
   const pathname = location.pathname;
 
   return (
     <div className="app">
-      <Header />
-      {pathname === "/" && <Home />}
+      <Header AccentColor={props.AccentColor} />
+      {pathname === "/" && <Home AccentColor={props.AccentColor} />}
       {pathname !== "/" && <Outlet />}
     </div>
   );

@@ -55,3 +55,10 @@
     transform: translateY(100%);
   }
 }
+
+#cursor-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: var(--accentCursor);
+}

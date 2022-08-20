@@ -5,7 +5,6 @@
   top: 0;
   width: 100%;
   z-index: 99999;
-  /* display: none; */
 }
 
 .preloader .preloader-block {
@@ -15,10 +14,6 @@
   right: 50%;
   transform: translate(50%,50%);
   z-index: 3000;
-}
-
-.preloader-icon {
-  /* display: none; */
 }
 
 .preloader .preloader-block .preloader-icon .loading-dot.loading-dot-1 {

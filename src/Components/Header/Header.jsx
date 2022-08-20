@@ -15,13 +15,13 @@ const Header = (props) => {
         <div className="menu">
           <ul>
             <li>
-              <Link to="blog-posts">Blog Posts</Link>
+              <Link to="blog-posts" style={{"--accentColor": `${props.AccentColor}`}}>Blog Posts</Link>
             </li>
             <li>
-              <Link to="about">About</Link>
+              <Link to="about" style={{"--accentColor": `${props.AccentColor}`}}>About</Link>
             </li>
             <li>
-              <Link to="contact">Contact</Link>
+              <Link to="contact" style={{"--accentColor": `${props.AccentColor}`}}>Contact</Link>
             </li>
           </ul>
         </div>

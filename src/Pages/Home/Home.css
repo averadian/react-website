@@ -37,6 +37,7 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-top: 70px;
 }
 
 .last-name {
@@ -45,11 +46,11 @@
 
 .non-colored {
   color: transparent;
-	-webkit-text-stroke: 2px blueviolet;
+	-webkit-text-stroke: 2px var(--accentColor);
 }
 
 .colored {
-  color: blueviolet;
+  color: var(--accentColor);
   position: absolute;
   left: 29.5rem;
 	animation: flowtext 4s ease-in-out infinite;
@@ -68,7 +69,7 @@
   text-decoration: none;
   color: #fff;
   display: inline-block;
-  background-color: blueviolet;
+  background-color: var(--accentColor);
   padding: 10px 40px;
   text-align: center;
   border-radius: 50px;
@@ -104,4 +105,13 @@
 			0% 100%
 		);
 	}
+}
+
+@keyframes gearSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }
