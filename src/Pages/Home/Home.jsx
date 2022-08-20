@@ -1,7 +1,5 @@
 // Package Imports
 import { Link } from 'react-router-dom';
-// Icon Imports
-import * as BsIcons from "react-icons/bs";
 // Style Imports
 import './Home.css';
 

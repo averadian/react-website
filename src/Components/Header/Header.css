@@ -16,7 +16,7 @@
   justify-content: space-between;
 }
 
-.header-inner a {
+.header-inner div {
   text-decoration: none;
 }
 
@@ -25,17 +25,18 @@
   max-width: 100px;
 }
 
-.header-container .menu a {
+.header-container .menu div {
   color: #fff;
   font-weight: 500;
   transition: all .3s ease;
 }
 
-.header-container .menu a:hover {
+.header-container .menu div:hover {
+  cursor: pointer;
   color: var(--accentColor);
 }
 
-.header-container a {
+.header-container div {
   border: none;
 }
 

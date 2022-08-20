@@ -4,13 +4,12 @@ import PageBox from '../../Components/PageBox/PageBox';
 import './BlogPosts.css';
 
 const BlogPosts = (props) => {
-  const { Title, Description, OverlayUp, OverlayDown, AccentColor } = props;
+  const { Title, Description, OverlayDown, AccentColor } = props;
 
   return (
     <PageBox 
       Title={Title} 
       Description={Description} 
-      OverlayUp={OverlayUp} 
       OverlayDown={OverlayDown}
       AccentColor={AccentColor} 
     >

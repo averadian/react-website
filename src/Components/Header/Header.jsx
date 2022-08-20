@@ -1,9 +1,16 @@
 // Package Imports
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 // Style Imports
 import './Header.css';
 
 const Header = (props) => {
+  const navigate = useNavigate();
+
+  const onClick = (e) => {
+    props.OverlayUp();
+    navigate(`${e.target.id}`);
+  }
+
   return (
     <div className="header-container">
       <div className="header-inner">
@@ -15,13 +22,13 @@ const Header = (props) => {
         <div className="menu">
           <ul>
             <li>
-              <Link to="blog-posts" style={{"--accentColor": `${props.AccentColor}`}}>Blog Posts</Link>
+              <div id="blog-posts" onClick={onClick} style={{"--accentColor": `${props.AccentColor}`}}>Blog Posts</div>
             </li>
             <li>
-              <Link to="about" style={{"--accentColor": `${props.AccentColor}`}}>About</Link>
+              <div id="about" onClick={onClick} style={{"--accentColor": `${props.AccentColor}`}}>About</div>
             </li>
             <li>
-              <Link to="contact" style={{"--accentColor": `${props.AccentColor}`}}>Contact</Link>
+              <div id="contact" onClick={onClick} style={{"--accentColor": `${props.AccentColor}`}}>Contact</div>
             </li>
           </ul>
         </div>

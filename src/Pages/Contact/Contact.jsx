@@ -10,7 +10,7 @@ import * as MdIcons from "react-icons/md";
 import './Contact.css';
 
 const Contact = (props) => {
-  const { Title, Description, OverlayUp, OverlayDown, AccentColor } = props;
+  const { Title, Description, OverlayDown, AccentColor } = props;
   const emailFormTemplate = {
     name: '',
     emailAddress: '',
@@ -58,7 +58,6 @@ const Contact = (props) => {
     <PageBox 
       Title={Title} 
       Description={Description} 
-      OverlayUp={OverlayUp} 
       OverlayDown={OverlayDown}
       AccentColor={AccentColor}  
     >

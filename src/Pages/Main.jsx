@@ -11,7 +11,7 @@ const Main = (props) => {
 
   return (
     <div className="app">
-      <Header AccentColor={props.AccentColor} />
+      <Header OverlayUp={props.OverlayUp} AccentColor={props.AccentColor} />
       {pathname === "/" && <Home AccentColor={props.AccentColor} />}
       {pathname !== "/" && <Outlet />}
     </div>

@@ -26,6 +26,13 @@
   z-index: 99999;
 }
 
+#cursor-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: var(--accentCursor);
+}
+
 @keyframes overlayEffectUp {
 	0% {
     -webkit-transform: translateY(100%);
@@ -54,11 +61,4 @@
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
   }
-}
-
-#cursor-container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  cursor: var(--accentCursor);
 }

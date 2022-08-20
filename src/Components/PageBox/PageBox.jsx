@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import './PageBox.css';
 
 const PageBox = (props) => {
-  const { Title, Description, OverlayUp, OverlayDown, AccentColor } = props;
+  const { Title, Description, OverlayDown, AccentColor } = props;
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -23,8 +23,6 @@ const PageBox = (props) => {
   }
 
   useEffect(() => {
-    OverlayUp();
-    
     setTimeout(() => {
       setLoading(false);
     }, 400);

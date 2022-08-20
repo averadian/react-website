@@ -17,7 +17,8 @@ function App() {
   const [accentCursor, setAccentCursor] = useState("default");
 
   const overlayUp = () => {
-    const overlayElement = document.getElementById("page-transition-effect").style;
+    const overlayElement = document.getElementById("page-transition-effect");
+    console.log(overlayElement)
     overlayElement.className = "animate-up";
   }
 
@@ -32,10 +33,10 @@ function App() {
       <div id="page-transition-effect"></div>
       <SiteCustomizer SetAccentColor={setAccentColor} SetAccentCursor={setAccentCursor} />
       <Routes>
-        <Route path="/" element={<Main AccentColor={accentColor} />}>
-          <Route path="blog-posts" element={<BlogPosts Title={"Blog Posts"} Description={"Showcasing some of my best work"} OverlayUp={overlayUp} OverlayDown={overlayDown} AccentColor={accentColor} />} />
-          <Route path="about" element={<About Title={"About Me"} Description={"Get to know me"} OverlayUp={overlayUp} OverlayDown={overlayDown} AccentColor={accentColor} />} />
-          <Route path="contact" element={<Contact Title={"Get in Touch"} Description={"Feel free to contact me anytime"} OverlayUp={overlayUp} OverlayDown={overlayDown} AccentColor={accentColor} />} />
+        <Route path="/" element={<Main OverlayUp={overlayUp} AccentColor={accentColor} />}>
+          <Route path="blog-posts" element={<BlogPosts Title={"Blog Posts"} Description={"Showcasing some of my best work"} OverlayDown={overlayDown} AccentColor={accentColor} />} />
+          <Route path="about" element={<About Title={"About Me"} Description={"Get to know me"} OverlayDown={overlayDown} AccentColor={accentColor} />} />
+          <Route path="contact" element={<Contact Title={"Get in Touch"} Description={"Feel free to contact me anytime"} OverlayDown={overlayDown} AccentColor={accentColor} />} />
         </Route>
       </Routes>
     </div>
