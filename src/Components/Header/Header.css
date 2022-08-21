@@ -1,51 +1,84 @@
-.header-container {
-  width: 800px; 
-  position: fixed;
-  transform: translate(-50%);
-  left: 50%;
+.navbar {
+  background-color: transparent;
+  padding: 23px 50px;
 }
 
-.header-inner {
-  width: 100%; 
-  height: auto; 
-  clear: both; 
-  float: left; 
-  padding-top: 40px; 
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between;
-}
+/* .navbar .navbar-brand img {
+  width: 110px;
+} */
 
-.header-inner div {
-  text-decoration: none;
-}
-
-.header-container .logo h1 {
+.navbar .navbar-brand h1 {
   color: white;
-  max-width: 100px;
+  font-size: 2rem;
 }
 
-.header-container .menu div {
-  color: #fff;
-  font-weight: 500;
-  transition: all .3s ease;
-}
-
-.header-container .menu div:hover {
+.navbar .navbar-brand h1:hover,
+#navbarSupportedContent div:hover {
   cursor: pointer;
   color: var(--accentColor);
 }
 
-.header-container div {
-  border: none;
+.navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+  margin-right: 32px;
+}
+.navbar .navbar-nav .nav-link {
+  color: #e6e6e6;
+  font-size: 15px;
+  padding: 0;
 }
 
-.header-container .menu ul {
-  margin: 0;
-  list-style-type: none;
+@media (max-width: 767.98px) {
+  .navbar .navbar-menu {
+    -ms-flex-direction: column;
+    -ms-flex-pack: justify;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 19px;
+    justify-content: space-between;
+    position: relative;
+    width: 30px;
+  }
+
+  .navbar .navbar-menu .btn-line, 
+  .navbar .navbar-menu::after, 
+  .navbar .navbar-menu::before {
+    background-color: #f3f3f3;
+    align-self: flex-end;
+    height: 3px;
+  }
+
+  .navbar .navbar-menu .btn-line {
+    width: 55%;
+  }
+
+  .navbar .navbar-menu::after {
+    content: '';
+    width: 100%;
+  }
+
+  .navbar .navbar-menu::before {
+    content: '';
+    width: 85%;
+  }
 }
 
-.header-container .menu ul li {
-  margin: 0 30px 0 0;
-  display: inline-block;
+@media (max-width: 767.98px)
+{
+  .navbar .navbar-collapse .navbar-nav {
+    background-color: #191919;
+    padding: 8px 20px;
+    position: relative;
+    top: 8px;
+    width: 200px;
+    z-index: 2;
+  }
+
+  .navbar .navbar-collapse .navbar-nav .nav-link {
+    color: rgba(255,255,255,.7);
+    font-size: 14px;
+    letter-spacing: .35px;
+    padding: 7px 0;
+  }
 }

@@ -1,9 +1,9 @@
 // Page Imports
 import PageBox from '../../Components/PageBox/PageBox';
 // Style Imports
-import './BlogPosts.css';
+import './Blog.css';
 
-const BlogPosts = (props) => {
+const Blog = (props) => {
   const { Title, Description, OverlayDown, AccentColor } = props;
 
   return (
@@ -18,4 +18,4 @@ const BlogPosts = (props) => {
   );
 }
 
-export default BlogPosts;
+export default Blog;
