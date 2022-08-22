@@ -65,55 +65,58 @@ const SiteCustomizer = (props) => {
           <li><div onClick={onColorClick} style={{backgroundColor: "#666d41"}}></div></li>
           <li><div onClick={onColorClick} style={{backgroundColor: "#fe0000"}}></div></li>
         </ul>
-        {isMobile() 
-        ? <></>
-        : <>  
-          <span className="title">Cursor Picker</span>
-          <ul className="cursor">
-            <li>
-              <div>
-                <GiIcons.GiArrowCursor className="cursor-icon" />
-                <div className="default clicker active" onClick={onCursorClick}></div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <FaIcons.FaHandPointer className="cursor-icon" />
-                <div className="pointer clicker" onClick={onCursorClick}></div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <FaIcons.FaHandPaper className="cursor-icon" />
-                <div className="grab clicker" onClick={onCursorClick}></div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <FaIcons.FaHandRock className="cursor-icon" />
-                <div className="grabbing clicker" onClick={onCursorClick}></div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <BiIcons.BiPlusMedical className="cursor-icon" />
-                <div className="cell clicker" onClick={onCursorClick}></div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <BiIcons.BiCrosshair className="cursor-icon" />
-                <div className="crosshair clicker" onClick={onCursorClick}></div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <TbIcons.TbForbid className="cursor-icon" />
-                <div className="no-drop clicker" onClick={onCursorClick}></div>
-              </div>
-            </li>
-          </ul>
-        </> }
+        {
+          isMobile() 
+          ? <></>
+          : 
+          <>  
+            <span className="title">Cursor Picker</span>
+            <ul className="cursor">
+              <li>
+                <div>
+                  <GiIcons.GiArrowCursor className="cursor-icon" />
+                  <div className="default clicker active" onClick={onCursorClick}></div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <FaIcons.FaHandPointer className="cursor-icon" />
+                  <div className="pointer clicker" onClick={onCursorClick}></div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <FaIcons.FaHandPaper className="cursor-icon" />
+                  <div className="grab clicker" onClick={onCursorClick}></div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <FaIcons.FaHandRock className="cursor-icon" />
+                  <div className="grabbing clicker" onClick={onCursorClick}></div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <BiIcons.BiPlusMedical className="cursor-icon" />
+                  <div className="cell clicker" onClick={onCursorClick}></div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <BiIcons.BiCrosshair className="cursor-icon" />
+                  <div className="crosshair clicker" onClick={onCursorClick}></div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <TbIcons.TbForbid className="cursor-icon" />
+                  <div className="no-drop clicker" onClick={onCursorClick}></div>
+                </div>
+              </li>
+            </ul>
+          </> 
+        }
       </div>
     </div>
   );
