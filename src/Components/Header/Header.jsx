@@ -8,11 +8,12 @@ const Header = (props) => {
 
   const onClick = (e) => {
     if (e.target.id !== "/") {
-      console.log(e.target.id);
       props.OverlayUp();
     }
     
-    navigate(`${e.target.id}`);
+    setTimeout(() => {
+      navigate(`${e.target.id}`);
+    }, 500);
   }
 
   const onNavClick = (e) => {

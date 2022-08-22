@@ -19,13 +19,13 @@ const PageBox = (props) => {
 
     setTimeout(() => {
       navigate("/");
-    }, 400);
+    }, 500);
   }
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 400);
+    }, 500);
   });
 
   return (
