@@ -5,7 +5,7 @@ const SkillBar = (props) => {
   return (
     <>
       <div className="skill clearfix">
-        <h4>Web Design</h4>
+        <h4>{props.Name}</h4>
         <div className="skill-value">{props.Width}</div>
       </div>
       <div className="skill-container" style={{"--accentColor": props.AccentColor}}>
