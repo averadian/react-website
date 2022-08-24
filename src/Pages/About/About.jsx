@@ -25,7 +25,7 @@ const About = (props) => {
           {/* <!-- Content part--> */}
           <div className="col-12 col-lg-7 info-content">
             <div className="content-block">
-              <h2 className="content-subtitle" style={{"--accentColor": AccentColor}}>Who am i?</h2>
+              <h2 className="content-subtitle" style={{"--accentColor": AccentColor}}>Who am I?</h2>
               <h6 className="content-title">I'm Nicholas Hacault, a student and Full Stack Developer</h6>
               <div className="content-description">
                 <p>I am a recently graduated Software Developer from Manitoba with a passion for technology. I believe that computers are the most powerful tool to enhance lives, create positive change worldwide, and bring people together. I take my love for tech and problem-solving skills to make this belief a reality.</p>

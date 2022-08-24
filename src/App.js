@@ -2,6 +2,7 @@
 import Main from './Pages/Main';
 import Blog from './Pages/Blog/Blog';
 import About from './Pages/About/About';
+import Resume from './Pages/Resume/Resume';
 import Contact from './Pages/Contact/Contact';
 // Component Imports
 import LoadingScreen from './Components/LoadingScreen/LoadingScreen';
@@ -36,6 +37,7 @@ function App() {
         <Route path="/" element={<Main OverlayUp={overlayUp} AccentColor={accentColor} />}>
           <Route path="blog" element={<Blog Title={"Blog Posts"} Description={"Showcasing some of my best work"} OverlayDown={overlayDown} AccentColor={accentColor} />} />
           <Route path="about" element={<About Title={"About Me"} Description={"Get to know me"} OverlayDown={overlayDown} AccentColor={accentColor} />} />
+          <Route path="resume" element={<Resume Title={"Resume"} Description={"Check out my resume"} OverlayDown={overlayDown} AccentColor={accentColor} />} />
           <Route path="contact" element={<Contact Title={"Get in Touch"} Description={"Feel free to contact me anytime"} OverlayDown={overlayDown} AccentColor={accentColor} />} />
         </Route>
       </Routes>
