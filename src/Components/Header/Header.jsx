@@ -52,7 +52,7 @@ const Header = (props) => {
         <ul className="navbar-nav ml-auto">
           <li className="nav-item"><div id="about" className="nav-link" onClick={onClick} style={{"--accentColor": props.AccentColor}}>About</div></li>
           <li className="nav-item"><div id="resume" className="nav-link" onClick={onClick} style={{"--accentColor": props.AccentColor}}>Resume</div></li>
-          {/* <li className="nav-item"><div id="portfolio" className="nav-link" onClick={onClick} style={{"--accentColor": props.AccentColor}}>Portfolio</div></li> */}
+          <li className="nav-item"><div id="portfolio" className="nav-link" onClick={onClick} style={{"--accentColor": props.AccentColor}}>Portfolio</div></li>
           {/* <li className="nav-item"><div id="blog" className="nav-link" onClick={onClick} style={{"--accentColor": props.AccentColor}}>Blog</div></li> */}
           <li className="nav-item"><div id="contact" className="nav-link" onClick={onClick} style={{"--accentColor": props.AccentColor}}>Contact</div></li>
         </ul>
