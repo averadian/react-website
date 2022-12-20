@@ -1,0 +1,53 @@
+.portfolio-section .filter-control {
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.list-inline ul {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+
+.portfolio-section .filter-control>li.tab-active, 
+.portfolio-section .filter-control>li:hover {
+	color: var(--accentColor);
+}
+
+.portfolio-section .filter-control>li:not(:last-child) {
+	margin-right: 16px;
+}
+
+.portfolio-section .filter-control>li {
+	border-bottom: 1px solid transparent;
+	color: #cecece;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: .3px;
+	position: relative;
+	transition: all .1s ease-in-out;
+}
+
+.portfolio-section .filter-control>li.tab-active:before, 
+.portfolio-section .filter-control>li:hover:before {
+	background-color: var(--accentColor);
+}
+
+.portfolio-section .filter-control>li.tab-active:before, 
+.portfolio-section .filter-control>li:hover:before {
+	bottom: 0;
+	content: "";
+	height: 1px;
+	position: absolute;
+	width: 100%;
+}
+
+.portfolio-grid {
+	position: relative;
+	height: 821.1px;
+}
