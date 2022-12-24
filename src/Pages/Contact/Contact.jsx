@@ -45,11 +45,13 @@ const Contact = (props) => {
       document.getElementById("contact-subject").value = "";
       document.getElementById("contact-message").value = "";
       setEmailForm(emailFormTemplate);
-      // add success popup
+      // filler
+      window.alert("Your message has been sent");
       setSending(false);
     })
     .catch((err) => {
-      // add failure popup
+      // filler
+      window.alert("There was an error");
       setSending(false);
     });
   };
