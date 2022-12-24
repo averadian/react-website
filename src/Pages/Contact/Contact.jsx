@@ -30,14 +30,14 @@ const Contact = (props) => {
   const handleOnSubmit = (e) => {
     e.preventDefault();
     setSending(true);
-    send("service_ebydno1", "template_t49rkfj",
+    send("service_77rr048", "template_l57otch",
       {
         from_name: emailForm.name,
         subject: emailForm.subject,
         message: emailForm.message,
         reply_to: emailForm.emailAddress
       },
-      "GT9iD3jenxkHBGWzh"
+      "db9qm4jXT2AwGt4gs"
     )
     .then((response) => {
       document.getElementById("contact-name").value = "";
@@ -45,11 +45,13 @@ const Contact = (props) => {
       document.getElementById("contact-subject").value = "";
       document.getElementById("contact-message").value = "";
       setEmailForm(emailFormTemplate);
-      // add success popup
+      // filler
+      window.alert("Your message has been sent");
       setSending(false);
     })
     .catch((err) => {
-      // add failure popup
+      // filler
+      window.alert("There was an error");
       setSending(false);
     });
   };
