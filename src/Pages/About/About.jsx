@@ -41,7 +41,7 @@ const About = (props) => {
                 </div>
                 <div className="row">
                   <div className="col-12 col-md-6 single-info"><span>Age:</span>
-                    <p>19</p>
+                    <p>20</p>
                   </div>
                   <div className="col-12 col-md-6 single-info"><span>From:</span>
                     <p>Winnipeg, MB</p>
