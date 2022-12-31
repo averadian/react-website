@@ -105,7 +105,7 @@ const Contact = (props) => {
                 <li>
                   <div className="media align-items-center"><span className="info-icon"><MdIcons.MdPhone className="contact-icon" style={{"--accentColor": `${props.AccentColor}`}} /></span>
                     <div className="media-body info-details">
-                      <h6 className="info-type">Call Me</h6><span className="info-value"><a href="tel:+14313015128">+1 (431) 301-5128</a></span>
+                      <h6 className="info-type">Text Me</h6><span className="info-value"><a href="tel:+12048181248">+1 (204) 818-1248</a></span>
                     </div>
                   </div>
                 </li>
