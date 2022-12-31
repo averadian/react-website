@@ -41,7 +41,7 @@ const About = (props) => {
                 </div>
                 <div className="row">
                   <div className="col-12 col-md-6 single-info"><span>Age:</span>
-                    <p>19</p>
+                    <p>20</p>
                   </div>
                   <div className="col-12 col-md-6 single-info"><span>From:</span>
                     <p>Winnipeg, MB</p>
@@ -52,28 +52,33 @@ const About = (props) => {
                 <a className="btn content-download button-main button-scheme" href="../../../Nicholas Hacault - Resume.pdf" role="button" style={{"--accentColor": AccentColor}} download>Download CV</a>
                 <ul className="list-unstyled list-inline content-follow">
                   <li className="list-inline-item">
-                    <a href="https://twitter.com/averadian" rel="noreferrer" style={{"--accentColor": AccentColor}}>
+                    <a href="https://twitter.com/averadian" target="_blank" rel="noopener noreferrer" style={{"--accentColor": AccentColor}}>
                       <BsIcons.BsTwitter className="about-icon" />
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="https://www.instagram.com/nhacault7" rel="noreferrer" style={{"--accentColor": AccentColor}}>
+                    <a href="https://www.instagram.com/nhacault7" target="_blank" rel="noopener noreferrer" style={{"--accentColor": AccentColor}}>
                       <BsIcons.BsInstagram className="about-icon" />
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="https://www.linkedin.com/in/nicholas-hacault-b089741b9/" rel="noreferrer" style={{"--accentColor": AccentColor}}>
+                    <a href="https://www.linkedin.com/in/nicholas-hacault-b089741b9/" target="_blank" rel="noopener noreferrer" style={{"--accentColor": AccentColor}}>
                       <BsIcons.BsLinkedin className="about-icon" />
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="https://github.com/nhacault7" rel="noreferrer" style={{"--accentColor": AccentColor}}>
+                    <a href="https://github.com/nhacault7" target="_blank" rel="noopener noreferrer" style={{"--accentColor": AccentColor}}>
                       <BsIcons.BsGithub className="about-icon" />
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="https://www.twitch.tv/averadian" rel="noreferrer" style={{"--accentColor": AccentColor}}>
-                      <BsIcons.BsTwitch className="about-icon" />
+                    <a href="https://www.reddit.com/user/averadian/" target="_blank" rel="noopener noreferrer" style={{"--accentColor": AccentColor}}>
+                      <BsIcons.BsReddit className="about-icon" />
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a href="https://www.youtube.com/channel/UCUkUePnECQsvs-xmDJgKBsA" target="_blank" rel="noopener noreferrer" style={{"--accentColor": AccentColor}}>
+                      <BsIcons.BsYoutube className="about-icon" />
                     </a>
                   </li>
                 </ul>

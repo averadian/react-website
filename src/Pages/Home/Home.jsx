@@ -41,7 +41,8 @@ const Home = (props) => {
               <li><a href="https://www.instagram.com/nhacault7" target="_blank" rel="noopener noreferrer"><BsIcons.BsInstagram className="home-icon" /></a></li>
               <li><a href="https://www.linkedin.com/in/nicholas-hacault-b089741b9/" target="_blank" rel="noopener noreferrer"><BsIcons.BsLinkedin className="home-icon" /></a></li>
               <li><a href="https://github.com/nhacault7" target="_blank" rel="noopener noreferrer"><BsIcons.BsGithub className="home-icon" /></a></li>
-              <li><a href="https://www.twitch.tv/averadian" target="_blank" rel="noopener noreferrer"><BsIcons.BsTwitch className="home-icon" /></a></li>
+              <li><a href="https://www.reddit.com/user/averadian/" target="_blank" rel="noopener noreferrer"><BsIcons.BsReddit className="home-icon" /></a></li>
+              <li><a href="https://www.youtube.com/channel/UCUkUePnECQsvs-xmDJgKBsA" target="_blank" rel="noopener noreferrer"><BsIcons.BsYoutube className="home-icon" /></a></li>
             </ul>
           </div>
         </div>
