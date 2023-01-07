@@ -37,7 +37,7 @@ const Home = (props) => {
           {/* <!-- Social media icons--> */}
           <div className="fixed-block block-right">
             <ul className="list-unstyled social-icons">
-              <li><a href="https://twitter.com/averadian" target="_blank" rel="noopener noreferrer"><BsIcons.BsTwitter className="home-icon" /></a></li>
+              {/* <li><a href="https://twitter.com/averadian" target="_blank" rel="noopener noreferrer"><BsIcons.BsTwitter className="home-icon" /></a></li> */}
               <li><a href="https://www.instagram.com/nhacault7" target="_blank" rel="noopener noreferrer"><BsIcons.BsInstagram className="home-icon" /></a></li>
               <li><a href="https://www.linkedin.com/in/nicholas-hacault-b089741b9/" target="_blank" rel="noopener noreferrer"><BsIcons.BsLinkedin className="home-icon" /></a></li>
               <li><a href="https://github.com/nhacault7" target="_blank" rel="noopener noreferrer"><BsIcons.BsGithub className="home-icon" /></a></li>

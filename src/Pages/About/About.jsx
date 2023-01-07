@@ -51,11 +51,11 @@ const About = (props) => {
               <div className="d-block d-sm-flex align-items-center">
                 <a className="btn content-download button-main button-scheme" href="../../../Nicholas Hacault - Resume.pdf" role="button" style={{"--accentColor": AccentColor}} download>Download CV</a>
                 <ul className="list-unstyled list-inline content-follow">
-                  <li className="list-inline-item">
+                  {/* <li className="list-inline-item">
                     <a href="https://twitter.com/averadian" target="_blank" rel="noopener noreferrer" style={{"--accentColor": AccentColor}}>
                       <BsIcons.BsTwitter className="about-icon" />
                     </a>
-                  </li>
+                  </li> */}
                   <li className="list-inline-item">
                     <a href="https://www.instagram.com/nhacault7" target="_blank" rel="noopener noreferrer" style={{"--accentColor": AccentColor}}>
                       <BsIcons.BsInstagram className="about-icon" />
