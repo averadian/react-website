@@ -485,3 +485,13 @@ div.text .wp-block-image a img {
 		width: 100%
 	}
 }
+
+@media screen and (max-width: 600px) {
+	#project-wrapper .main-article {
+		padding: 25px;
+	}
+
+	#project-wrapper .featured-image {
+		margin: 0px 0px 25px
+	}
+}
