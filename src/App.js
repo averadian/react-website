@@ -5,6 +5,7 @@ import About from './Pages/About/About';
 import Resume from './Pages/Resume/Resume';
 import Contact from './Pages/Contact/Contact';
 import Portfolio from './Pages/Portfolio/Portfolio';
+import PiBag from './Pages/Portfolio/Projects/PiBag/PiBag';
 // Component Imports
 import LoadingScreen from './Components/LoadingScreen/LoadingScreen';
 import SiteCustomizer from './Components/SiteCustomizer/SiteCustomizer';
@@ -21,7 +22,6 @@ function App() {
 
   const overlayUp = () => {
     const overlayElement = document.getElementById("page-transition-effect");
-    console.log(overlayElement)
     overlayElement.className = "animate-up";
   }
 
@@ -40,7 +40,9 @@ function App() {
           <Route path="blog" element={<Blog Title={"Blog Posts"} Description={"Showcasing some of my best work"} OverlayDown={overlayDown} AccentColor={accentColor} />} />
           <Route path="about" element={<About Title={"About Me"} Description={"Get to know me"} OverlayDown={overlayDown} AccentColor={accentColor} />} />
           <Route path="resume" element={<Resume Title={"Resume"} Description={"Check out my resume"} OverlayDown={overlayDown} AccentColor={accentColor} />} />
-          <Route path="portfolio" element={<Portfolio Title={"Portfolio"} Description={"Showcasing some of my best work"} OverlayDown={overlayDown} AccentColor={accentColor} />} />
+          <Route path="portfolio" element={<Portfolio Title={"Portfolio"} Description={"Showcasing some of my best work"} OverlayDown={overlayDown} AccentColor={accentColor} />}>
+            <Route path="pibag" element={<PiBag OverlayUp={overlayUp} AccentColor={accentColor} />} />
+          </Route>
           <Route path="contact" element={<Contact Title={"Get in Touch"} Description={"Feel free to contact me anytime"} OverlayDown={overlayDown} AccentColor={accentColor} />} />
         </Route>
       </Routes>
