@@ -1,0 +1,15 @@
+.project-back-icon-wrapper {
+  text-align: right;
+}
+
+.project-back-icon {
+  margin: 1.5rem 2.5rem;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  color: gray;
+}
+
+.project-back-icon:hover {
+  cursor: pointer;
+  color: white;
+}

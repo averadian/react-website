@@ -180,18 +180,29 @@
 	content: '';
 }
 
+.info-card-picture:hover {
+	cursor: pointer;
+}
+
+.info-card-text-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
 .content-title {
 	color: #fff;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 400;
 	line-height: 1.8;
-	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .content-more {
 	display: inline-block;
 	font-weight: 600;
 	color: var(--accentColor);
+	cursor: pointer;
+	margin-top: 18px;
 }
 
 .content-more:hover {

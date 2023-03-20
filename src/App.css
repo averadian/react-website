@@ -1,3 +1,7 @@
+.app {
+  background-color: #303030;
+}
+
 #page-transition-effect.animate-up {
   -webkit-animation-name: overlayEffectUp;
   animation-name: overlayEffectUp;

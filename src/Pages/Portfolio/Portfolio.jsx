@@ -2,6 +2,7 @@
 import PageBox from '../../Components/PageBox/PageBox';
 // Package Imports
 import { useState } from 'react';
+import { useLocation, Outlet } from "react-router-dom";
 // Component Imports
 import PortfolioInfo from '../../Components/PortfolioInfo/PortfolioInfo';
 import PortfolioCard from '../../Components/PortfolioCard/PortfolioCard';
@@ -13,6 +14,9 @@ const Portfolio = (props) => {
 
   const [infoImage, setInfoImage] = useState("");
   const [infoName, setInfoName] = useState("");
+
+  const location = useLocation();
+  const pathname = location.pathname;
 
   const handleFilterOnClick = (e) => {
     document.querySelector(".tab-active").classList.toggle("tab-active");
@@ -29,29 +33,34 @@ const Portfolio = (props) => {
 	}
 
 	return (
-		<PageBox 
-      Title={Title} 
-      Description={Description}  
-      OverlayDown={OverlayDown}
-      AccentColor={AccentColor}  
-    >
-      <div className="portfolio-section single-section">
-        <div className="row">
-          {/* Filter nav */}
-          <div className="col-12">
-            <ul className="list-inline filter-control">
-              <li className="list-inline-item tab-active" style={{"--accentColor": `${props.AccentColor}`}} onClick={handleFilterOnClick}>All</li>
-              <li className="list-inline-item" style={{"--accentColor": `${props.AccentColor}`}} onClick={handleFilterOnClick}>Projects</li>
-            </ul>
-          </div>
-        </div>
-        {/* Thumbnail list */}
-        <div className="portfolio-grid row">
-          <PortfolioCard AccentColor={AccentColor} Name={"???"} Category={"Projects"} Image={"./item-1.jpg"} AltText={"A backpack with a computer built into it"} HandleOnClick={handleCardOnClick} />
-        </div>
-        <PortfolioInfo AccentColor={AccentColor} InfoImage={infoImage} InfoName={infoName} />
-      </div>
-    </PageBox>
+    <>
+      {pathname !== "/portfolio" 
+        ? <Outlet /> 
+        : <PageBox 
+          Title={Title} 
+          Description={Description}  
+          OverlayDown={OverlayDown}
+          AccentColor={AccentColor}  
+        >
+          <div className="portfolio-section single-section">
+            <div className="row">
+              {/* Filter nav */}
+              <div className="col-12">
+                <ul className="list-inline filter-control">
+                  <li className="list-inline-item tab-active" style={{"--accentColor": `${props.AccentColor}`}} onClick={handleFilterOnClick}>All</li>
+                  <li className="list-inline-item" style={{"--accentColor": `${props.AccentColor}`}} onClick={handleFilterOnClick}>Projects</li>
+                </ul>
+              </div>
+            </div>
+            {/* Thumbnail list */}
+            <div className="portfolio-grid row">
+              <PortfolioCard AccentColor={AccentColor} Name={"Pi Bag"} Category={"Projects"} Image={"/pi-bag.jpg"} AltText={"A backpack with a computer built into it"} HandleOnClick={handleCardOnClick} />
+            </div>
+            <PortfolioInfo AccentColor={AccentColor} InfoImage={infoImage} InfoName={infoName} OverlayDown={OverlayDown} />
+          </div> 
+        </PageBox>
+      }
+    </>
 	);
 }
 
