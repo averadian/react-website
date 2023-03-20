@@ -209,3 +209,17 @@
 	text-decoration: none;
 	color: var(--accentColor);
 }
+
+@media screen and (max-width: 800px) {
+	.info-card-container {
+		max-width: 60%;
+		padding: 25px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.info-card-container {
+		max-width: 80%;
+		padding: 25px;
+	}
+}
