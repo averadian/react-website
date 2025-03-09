@@ -112,7 +112,7 @@ const Contact = (props) => {
                 <li>
                   <div className="media align-items-center"><span className="info-icon"><IoIcons.IoMdSend className="contact-icon" style={{"--accentColor": `${props.AccentColor}`}} /></span>
                     <div className="media-body info-details">
-                      <h6 className="info-type">Email Me</h6><span className="info-value"><a href="mailto:nhacault7@gmail.com">nhacault7@gmail.com</a></span>
+                      <h6 className="info-type">Email Me</h6><span className="info-value"><a href="mailto:contact@averadian.ca">contact@averadian.ca</a></span>
                     </div>
                   </div>
                 </li>
